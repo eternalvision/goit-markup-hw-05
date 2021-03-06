@@ -20,6 +20,8 @@
     --product-bg-color: rgba(47, 48, 58, 0.8);
     
     --techno-bg-color:rgba(33, 150, 243, 0.9);
+
+    --cubic-main:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body{
@@ -74,13 +76,13 @@ margin: 0 auto;
     margin-right:93px;
     margin-top: 24px;
     margin-bottom: 24px;
+
+        color: var(--main-color);
 }
 .web {
     color: var(--secondary-color);
 }
-.studio {
-    color: var(--main-color);
-}
+
 .studio-f{
     color:var(--whitey-color);
 }
@@ -110,10 +112,16 @@ margin: 0 auto;
     padding-top: 7px;
     padding-bottom: 7px;
 
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms var(--cubic-main);
 }
 .links-menu.active{
     color: var(--secondary-color);
+}
+.links-menu.active::after{
+    content:'';
+    border-bottom: 4px;
+    border-color:var(--secondary-color);
+    border-radius: 2px;
 }
 
 .menu-left-links:not(:first-child),
@@ -134,6 +142,69 @@ margin-right: 50px;
 .links-menu:focus {
     color: var(--secondary-color);
 }
+/* MODAL */
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width:100%;
+    height: 100%;
+
+    background-color:rgba(0, 0, 0, 0.2);
+    
+    transition: opacity 250ms var(--cubic-main);
+
+    opacity: 1;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop.is-hidden.modal{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 528px;
+
+    height: 581px;
+
+    background-color:var(--whitey-color);
+    transition: transform 250ms var(--cubic-main);
+
+}
+.button-modal:hover, .button-modal:focus{
+    background-color: var(--secondary-color);
+
+    cursor: pointer;
+
+}
+.button-modal{
+    position: absolute;
+
+    right: 8px;
+    top: 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--whitey-color);
+
+    border-radius:50%;
+
+    width:30px;
+    height:30px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: background-color 250ms var(--cubic-main);
+}
+
 
 
 /* Contacts about */
@@ -179,7 +250,7 @@ margin-right: 50px;
         letter-spacing: 0.02em;
         line-height: 1.1;
 
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: color 250ms var(--cubic-main);
 }
 .contacts, 
 .contacts-header:hover {
@@ -400,7 +471,7 @@ background-position: center; */
                     align-items: center;
                     justify-content: center;
 
-                        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        transition: color 250ms var(--cubic-main), background-color 250ms var(--cubic-main);
 }
 .team-links{
 display: flex;
@@ -415,8 +486,8 @@ height: 44px;
 
 color: var(--clients-icon-color);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--cubic-main),
+    background-color 250ms var(--cubic-main);
 }
 
 .team-icon{
@@ -522,8 +593,8 @@ display: flex;
 
         color: var(--clients-icon-color);
 
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms var(--cubic-main),
+        border-color 250ms var(--cubic-main);
 }
 .clients-ico{
         fill: currentColor;
@@ -599,7 +670,7 @@ display: flex;
 
         border-radius: 50%;
 
-                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                transition: background-color 250ms var(--cubic-main);
 }
 .footer-links-social:hover, .footer-links-social:focus{
        background-color: var(--secondary-color);
@@ -647,7 +718,7 @@ display: flex;
         letter-spacing: 0.02em;
         line-height: 1.1;
 
-                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                transition: color 250ms var(--cubic-main);
 }
 .contacts-footer:hover,
 .container-footer:focus {

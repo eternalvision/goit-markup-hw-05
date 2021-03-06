@@ -18,8 +18,7 @@
       <div class="container-header">
         <nav class="navigation">
           <a href="./index.html" class="web-studio">
-            <span class="web"> Web </span>
-            <span class="studio"> Studio </span>
+            <span class="web">Web</span>Studio
           </a>
           <ul class="links">
             <li class="menu-left-links">
@@ -65,7 +64,7 @@
             для вашего бизнеса
           </h1>
 
-          <a class="hero-button" href="#">Заказать услугу</a>
+          <a class="hero-button" data-modal-open href="#">Заказать услугу</a>
         </div>
       </section>
 
@@ -476,6 +475,32 @@
       </div>
     </footer>
 
-    <script src="./js/modal.js"></script>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-modal" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/ico/close.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-modal-open]'),
+          closeModalBtn: document.querySelector('[data-modal-close]'),
+          modal: document.querySelector('[data-modal]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+    </script>
   </body>
 </html>
