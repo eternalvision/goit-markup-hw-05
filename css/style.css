@@ -83,10 +83,6 @@ margin: 0 auto;
     color: var(--secondary-color);
 }
 
-.studio-f{
-    color:var(--whitey-color);
-}
-
 
 /* Links About */
 .links{
@@ -728,6 +724,9 @@ display: flex;
 
 
 .web-studio-footer {
+
+        color:var(--whitey-color);
+
     font-size: 26px;
     font-family: Raleway, sans-serif;
 
