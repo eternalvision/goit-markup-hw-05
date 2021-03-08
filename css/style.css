@@ -106,19 +106,28 @@ margin: 0 auto;
     box-sizing:border-box;
 
     padding-top: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 30px;
 
         transition: color 250ms var(--cubic-main);
 }
 .links-menu.active{
     color: var(--secondary-color);
+    position: relative;
 }
 .links-menu.active::after{
-    content:'';
-    border-bottom: 4px;
-    border-color:var(--secondary-color);
+        content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+
+    height: 4px;
+    margin-top: 28px;
+    width: 100%;
+
+    background-color: var(--secondary-color);
     border-radius: 2px;
 }
+
 
 .menu-left-links:not(:first-child),
 .links-h:not(:first-child){
