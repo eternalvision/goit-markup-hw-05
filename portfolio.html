@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Портфолио</title>
+    <title>Студия</title>
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -19,14 +18,14 @@
       <div class="container-header">
         <nav class="navigation">
           <a href="./index.html" class="web-studio">
-            <span class="web"> Web</span>Studio
+            <span class="web">Web</span>Studio
           </a>
           <ul class="links">
             <li class="menu-left-links">
-              <a class="links-menu" href="./index.html"> Студия </a>
+              <a class="links-menu active" href="./index.html"> Студия </a>
             </li>
             <li class="menu-left-links">
-              <a class="links-menu active" href="./portfolio.html">Портфолио</a>
+              <a class="links-menu" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu-left-links">
               <a class="links-menu" href="#">Команда</a>
@@ -56,197 +55,342 @@
     </header>
 
     <!-- Основной контент -->
-    <main>
-      <!-- Кнопки -->
-      <section class="buttons">
+    <main class="main">
+      <!--Герой  -->
+      <section class="hero">
         <div class="container">
-          <ul class="button-portfolio">
-            <div class="buttons-block">
-              <li class="button-main">
-                <button class="button-filter">Все</button>
-              </li>
-              <li class="button-main">
-                <button class="button-filter">Веб сайты</button>
-              </li>
-              <li class="button-main">
-                <button class="button-filter">Приложения</button>
-              </li>
-              <li class="button-main">
-                <button class="button-filter">Дизайн</button>
-              </li>
-              <li class="button-main">
-                <button class="button-filter">Маркетинг</button>
-              </li>
-            </div>
+          <h1 class="hero-title">
+            Эффективные ршения <br />
+            для вашего бизнеса
+          </h1>
+
+          <a class="hero-button" data-modal-open href="#">Заказать услугу</a>
+        </div>
+      </section>
+
+      <!-- Центральный контент -->
+      <section class="under-hero">
+        <div class="container">
+          <ul class="heading">
+            <li>
+              <svg class="under-links-ico" width="16" height="16">
+                <use href="./images/sprite.svg#icon-antenna"></use>
+              </svg>
+              <h4 class="heading-title">Внимание к деталям</h4>
+              <p class="heading-info">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <!--  -->
+            <li>
+              <svg class="under-links-ico" width="16" height="16">
+                <use href="./images/sprite.svg#icon-clock"></use>
+              </svg>
+              <h4 class="heading-title">Пунктуальность</h4>
+              <p class="heading-info">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <!--  -->
+            <li>
+              <svg class="under-links-ico" width="16" height="16">
+                <use href="./images/sprite.svg#icon-diagram"></use>
+              </svg>
+              <h4 class="heading-title">Планирование</h4>
+              <p class="heading-info">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <!--  -->
+            <li>
+              <svg class="under-links-ico" width="16" height="16">
+                <use href="./images/sprite.svg#icon-astronaut"></use>
+              </svg>
+              <h4 class="heading-title">Современные технологии</h4>
+              <p class="heading-info">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
           </ul>
         </div>
       </section>
-      <!-- Карточки -->
-      <section class="cards">
+      <!--  -->
+      <!-- Наши Занятия -->
+      <section class="classes">
         <div class="container">
-          <!-- 1 КОЛОНКА  -->
-          <ul class="card-many">
-            <li class="cards-info">
-              <!--  -->
-              <a href="#" class="portfolio-cards">
-                <div class="thumb">
-                  <img
-                    class="cards-block"
-                    src="./images/2block/1.jpg"
-                    alt=""
-                    width="370"
-                  />
-
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Технокряк</h3>
-                  <p class="card-info">Веб-сайт</p>
-                </div>
-              </a>
+          <h2 class="classes-title">Чем мы занимаемся</h2>
+          <ul class="classes-img">
+            <li>
+              <img
+                src="./images/1block/1.jpg"
+                alt="excellent layout"
+                width="370"
+              />
+              <h3 class="product-actions poduct-title">
+                ДЕСКСТОПНЫЕ ПРИЛОЖЕНИЯ
+              </h3>
             </li>
-            <!--  -->
-            <li class="cards-info">
-              <a href="#" class="portfolio-cards">
-                <div class="thumb">
-                  <img src="./images/2block/2.jpg" alt="" width="370" />
-
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Постер New Orlean vs Golden Star</h3>
-                  <p class="card-info">Дизайн</p>
-                </div>
-              </a>
+            <li>
+              <img
+                src="./images/1block/2.jpg"
+                alt="interface style"
+                width="370"
+              />
+              <h3 class="product-actions product-title">
+                МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
+              </h3>
             </li>
-
-            <li class="cards-info">
-              <a href="#" class="portfolio-cards">
-                <div class="thumb">
-                  <img src="./images/2block/3.jpg" alt="" width="370" />
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Ресторан Seafood</h3>
-                  <p class="card-info">Приложение</p>
-                </div>
-              </a>
+            <li>
+              <img
+                src="./images/1block/3.jpg"
+                alt="correct scale"
+                width="370"
+              />
+              <h3 class="product-actions product-title">
+                ДИЗАЙНЕРСКИЕ РЕШЕНИЯ
+              </h3>
             </li>
           </ul>
-          <!-- 2 КОЛОНКА  -->
-          <ul class="card-many">
-            <li class="cards-info">
-              <a href="#" class="portfolio-cards">
-                <div class="thumb">
-                  <img src="./images/2block/4.jpg" alt="" width="370" />
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Проект Prime</h3>
-                  <p class="card-info">Маркетинг</p>
-                </div>
-              </a>
+        </div>
+      </section>
+
+      <!-- Команда -->
+      <section class="team">
+        <div class="container">
+          <h2 class="classes-title-team">Наша Команда</h2>
+
+          <ul class="best-team-member">
+            <li class="team-block">
+              <img
+                src="./images/group/1.jpg"
+                alt="Product Designer"
+                width="270"
+              />
+
+              <div class="team-cards">
+                <h3 class="team-member">Игорь Демьяненко</h3>
+                <p class="team-profession">Product Designer</p>
+                <ul class="category-team-links">
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="cards-info">
-              <a href="#" class="portfolio-cards">
-                <div class="thumb">
-                  <img src="./images/2block/5.jpg" alt="" width="370" />
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Проект Boxes</h3>
-                  <p class="card-info">Приложение</p>
-                </div>
-              </a>
+
+            <li class="team-block">
+              <img
+                src="./images/group/2.jpg"
+                alt="Frontend Developer"
+                width="270"
+              />
+              <div class="team-cards">
+                <h3 class="team-member">Игорь Демьяненко</h3>
+                <p class="team-profession">Product Designer</p>
+                <ul class="category-team-links">
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <!--  -->
-            <li class="cards-info">
-              <a href="#" class="portfolio-cards">
-                <div class="thumb">
-                  <img src="./images/2block/6.jpg" alt="" width="370" />
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Inspiration has no Borders</h3>
-                  <p class="card-info">Веб-сайт</p>
-                </div>
-              </a>
+
+            <li class="team-block">
+              <img src="./images/group/3.jpg" alt="Marketing" width="270" />
+              <div class="team-cards">
+                <h3 class="team-member">Игорь Демьяненко</h3>
+                <p class="team-profession">Product Designer</p>
+                <ul class="category-team-links">
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="team-block">
+              <img src="./images/group/4.jpg" alt="UI Designer" width="270" />
+              <div class="team-cards">
+                <h3 class="team-member">Игорь Демьяненко</h3>
+                <p class="team-profession">Product Designer</p>
+                <ul class="category-team-links">
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-team-links">
+                    <a href="#" class="team-links">
+                      <svg class="team-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
-          <!-- 3 КОЛОНКА -->
-          <ul class="card-many">
-            <li class="cards-info">
-              <a href="#" class="portfolio-cards">
-                <div class="thumb">
-                  <img src="./images/2block/7.jpg" alt="" width="370" />
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Издание Limited Edition</h3>
-                  <p class="card-info">Дизайн</p>
-                </div>
+        </div>
+      </section>
+
+      <!-- Наши Клиенты -->
+      <section class="under-team">
+        <div class="container">
+          <h2 class="classes-title-team">Постоянные клиенты</h2>
+
+          <ul class="clients">
+            <li class="clients-border">
+              <a href="#" class="clients-links">
+                <svg class="clients-ico" width="44.27" height="49.23">
+                  <use href="./images/sprite.svg#icon-company-1"></use>
+                </svg>
               </a>
             </li>
             <!--  -->
-            <li class="cards-info">
-              <a href="#" class="portfolio-cards">
-                <img src="./images/2block/8.jpg" alt="" width="370" />
-                <div class="thumb">
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Проект LAB</h3>
-                  <p class="card-info">Маркетинг</p>
-                </div>
+            <li class="clients-border">
+              <a href="#" class="clients-links">
+                <svg class="clients-ico" width="40" height="52">
+                  <use href="./images/sprite.svg#icon-company-2"></use>
+                </svg>
               </a>
             </li>
             <!--  -->
-            <li class="cards-info">
-              <a href="#" class="portfolio-cards">
-                <div class="thumb">
-                  <img src="./images/2block/9.jpg" alt="" width="370" />
-                  <p class="techno-text">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="cards-info-title">
-                  <h3 class="card-pojects">Growing Business</h3>
-                  <p class="card-info">Приложение</p>
-                </div>
+            <li class="clients-border">
+              <a href="#" class="clients-links">
+                <svg class="clients-ico" width="41" height="42.6">
+                  <use href="./images/sprite.svg#icon-company-3"></use>
+                </svg>
+              </a>
+            </li>
+            <!--  -->
+            <li class="clients-border">
+              <a href="#" class="clients-links">
+                <svg class="clients-ico" width="70.66" height="72.02">
+                  <use href="./images/sprite.svg#icon-company-4"></use>
+                </svg>
+              </a>
+            </li>
+            <!--  -->
+            <li class="clients-border">
+              <a href="#" class="clients-links">
+                <svg class="clients-ico" width="59" height="47">
+                  <use href="./images/sprite.svg#icon-company-5"></use>
+                </svg>
+              </a>
+            </li>
+            <!--  -->
+            <li class="clients-border">
+              <a href="#" class="clients-links">
+                <svg class="clients-ico" width="88.48" height="75.44">
+                  <use href="./images/sprite.svg#icon-company-6"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -329,5 +473,58 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <!-- Закрыть -->
+        <button class="button-modal" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/ico/close.svg#close"></use>
+          </svg>
+        </button>
+        <!-- Форма -->
+        <!-- <form name="signup_form" autocomplete="on" novalidate>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+
+          <label>
+            Password
+            <input type="password" name="password" />
+          </label>
+
+          <label>
+            Password
+            <input type="password" name="password" />
+          </label>
+
+          <textarea
+            name="feedback"
+            rows="5"
+            placeholder="Type your message here..."
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form> -->
+      </div>
+    </div>
+
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-modal-open]'),
+          closeModalBtn: document.querySelector('[data-modal-close]'),
+          modal: document.querySelector('[data-modal]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+    </script>
   </body>
 </html>
